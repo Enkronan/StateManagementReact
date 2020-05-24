@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Movie from './Movie';
 
 const MovieList = ()  => {
 
@@ -23,7 +24,7 @@ const MovieList = ()  => {
     return(
         <div>
         {movies.map(movie => (
-            <li>{movie.name}</li>
+            <Movie name={movie.name}/>
         ))}
         </div>
     );
