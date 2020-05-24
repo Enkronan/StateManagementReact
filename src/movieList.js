@@ -24,7 +24,7 @@ const MovieList = ()  => {
     return(
         <div>
         {movies.map(movie => (
-            <Movie name={movie.name}/>
+            <Movie key={movie.id} name={movie.name} price={movie.price}/>
         ))}
         </div>
     );
